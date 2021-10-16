@@ -10,4 +10,9 @@ Posts.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
+Comments.belongsTo(Posts, {
+  foreignKey: ''
+  
+})
+
 module.exports = { User, Posts };
