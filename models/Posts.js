@@ -15,7 +15,7 @@ Posts.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    content: {
+    description: {
       type: DataTypes.STRING,
     },
     date_created: {
@@ -41,4 +41,4 @@ Posts.init(
   }
 );
 
-module.exports = Project;
+module.exports = Posts;
