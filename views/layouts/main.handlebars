@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body> 
+  
+  <div class="pageDisplay">
+    <header >
+      <h1>Tech Blog</h1>
+      <nav>
+        {{#if logged_in}}
+        <a href="/profile" class="no-button  navOptions">profile</a> |
+        <button class="no-button navOptions" id="logout">logout</button>
+        {{else}}
+        <a href="/login" class="no-button  navOptions">login</a>
+        <a href="/donate" class="no-button  navOptions">donate</a>
+        {{/if}}
+      </nav>
+    </header>
+
+ 
+    {{!-- <img src="https://media1.giphy.com/media/I01tgsEHtjRm0/giphy.gif" alt="banner" class="banner"> --}}
+   
+    <main class="mainClass">
+      {{{body}}}
+    </main>
+    
+    
+  </div>
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+</html>
+
+
+{{!-- <h1>
+
+  <span role="img" aria-label="plant">♻️ </span>
+  <a href="/"> <span class="no-button " id="titleColor">
+      Waste No More! |</span></a> <span id="slogan"> Helping gardens out since 2021 </span>
+</h1> --}}

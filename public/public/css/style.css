@@ -1,0 +1,248 @@
+/* .imgbanner {
+  width: 100%;
+  border: 10px solid green;
+} */
+
+body, html {
+  height: 100%
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/ae/1d/4f/ae1d4fa25da4a22a151a03e3c8a7802d.gif");
+
+  /* Set a specific height */
+  height: 20rem;
+  
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(231, 245, 110);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 200%;
+  text-shadow: 1.5px 1.5px black;
+}
+
+#welcome {
+  text-align: center;
+  font-weight: bolder;
+  font-style: oblique;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-size: 50px;
+  color: rgb(134, 4, 4);
+}
+
+#homeParagraph {
+  text-align: center;
+  color: rgb(134, 4, 4);
+  font-size: 20px;
+} 
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+#firstGarden {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 3px;
+  border: 10px groove green;
+}
+
+#secondGarden {
+  width: 350px;
+  height: 250px;
+  border: 10px groove green;
+}
+
+.mainclass {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
+}
+
+#firstGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
+#secondGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
+.listDisplay{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profilemap {
+  width: 40%;
+  height: 200px;
+}
+
+body{
+
+  /* background: linear-gradient(green, orange); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url(https://i.pinimg.com/originals/ae/1d/4f/ae1d4fa25da4a22a151a03e3c8a7802d.gif); */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  margin-top: -3px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+#slogan {
+  color: lightslategray;
+  font-size: 10px;
+}
+
+.navOptions {
+  color: orange;
+  margin: 10px;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: orange;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+#titleColor {
+  color: orange;
+}
+
+.signUp {
+  margin-top: 20%;
+} */
+
+
+
+.mainclass {
+  width: 100%;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#map {
+  height: 300px;
+  width: 100%
+}
+
+.map {
+  margin-top: 15%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+#contact-me {
+  color: green;
+}
+
+svg {
+  border-radius: 5px;
+}
+
+svg:hover {
+  box-shadow: 0px 0px 9px black;
+
+}
+
+footer {
+ text-align: center;
+  display: flex;
+  justify-content: center;
+  background: white;
+  width: 100%;
+}
+
+
+
+#welcome {
+  text-align: center;
+}
+
+
+
+#homeParagraph {
+  text-align: center;
+}
+
+.gardensList{
+  display: flex;
+
+}
+
+.profileBody{
+  overflow: auto;
+  width: 90vw;
+
+}
+
+.grid-container{
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+  /*background-color: greenyellow; */
+   min-height: 600px; 
+}
+
+#map{
+  height: 400px; 
+  width:400px
+} 

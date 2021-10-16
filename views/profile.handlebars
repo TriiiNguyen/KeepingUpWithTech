@@ -1,0 +1,32 @@
+<div class="profileBody">
+
+  <div class="row">
+    <div class="col-auto">
+      <h2>Welcome, {{firstname}} {{lastname}}!</h2>
+    </div>
+  </div>
+
+  <hr />
+  <br/> 
+
+  <div class="grid-container">
+    {{#if hostedGardens.length}}
+    <div>
+      <h3>My Gardens:</h3>
+
+      {{#each hostedGardens as |garden|}}
+      <div class="gardensList">
+        <div>
+          <h4 class="gardensName"><a href="/garden/{{garden.id}}">{{garden.name}}</a></h4>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+
+    <div>
+      {{> map}}
+    </div>
+
+  </div>
+</div>

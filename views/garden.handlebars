@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, to {{name}}!</h2>
+    {{!-- <p>Hosted by {{host.firstname}} {{host.lastname}}</p> --}}
+    <p>{{address}}</p>
+    <a href="{{website}}" target="_blank">{{website}}</a>
+  </div>
+</div>
+
+{{!-- {{> map}} --}}
+
+  <h2>Local Gardens</h2>
+
+  <!--The div element for the map -->
+  <div id="map"></div>
+
+<script>
+function initMap() {
+  const myLatLng = { lat: {{latitude}}, lng: {{longitude}} };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+</script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpSBx1lRYNTBGBAzxLUjWYaSLnKq1u1Us&callback=initMap">
+</script>
